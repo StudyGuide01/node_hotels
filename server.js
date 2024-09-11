@@ -2,9 +2,10 @@ import express from "express";
 import db from "./db.js";
 import bodyParser from "body-parser";
 const app = express();
-const PORT = 3000;
 import url from "url";
+import dotenv from 'dotenv/config'
 
+const PORT = process.env.PORT ||  3000;
 
 
 

@@ -42,6 +42,7 @@ router.post("/", async (req, res) => {
   
       //save data in database
       const savePerson = newPerson.save();
+      // const savePerson=await PersonSchemaModel.create(newPerson);
       res.status(201).json({ status: "data saved successfully" });
     } catch (error) {
       console.log(error);
